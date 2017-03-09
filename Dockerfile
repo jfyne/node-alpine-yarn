@@ -12,3 +12,5 @@ RUN apk add --no-cache --virtual .build-deps \
     ln -s /usr/local/bin/dist/bin/yarn.js /usr/local/bin/yarn.js && \
     ln -s /usr/local/bin/dist/bin/yarn /usr/local/bin/yarn && \
     apk del .build-deps
+
+WORKDIR /usr/src/app
